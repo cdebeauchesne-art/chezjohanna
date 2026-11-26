@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Chez Johanna — Locations à Cannes et en Provence (version de test)</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="test-banner">Version de test — les réservations ne sont pas encore actives</div>
+
+<header class="site-header">
+  <a class="logo" href="index.html">Chez Johanna</a>
+  <nav class="nav" aria-label="Navigation principale">
+    <a href="#logements">Nos logements</a>
+    <a href="#festivals">Festivals &amp; salons</a>
+    <a href="#hotes">Vos hôtes</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  <div class="header-right">
+    <button type="button" class="lang" aria-label="Changer de langue">FR · EN · IT · DE</button>
+    <a class="btn btn-blue nav" href="#reserver">Réserver</a>
+  </div>
+</header>
+
+<main>
+<section class="hero" aria-label="Bienvenue">
+  <img src="https://a0.muscache.com/im/pictures/hosting/Hosting-1566546635946005863/original/bd263180-3dff-4ab4-9d32-94d0581c9a04.jpeg?im_w=1200" alt="Appartement Louis Blanc, Cannes">
+  <div class="hero-text">
+    <p class="eyebrow">Cannes · Côte d'Azur · Provence</p>
+    <h1>Quatre adresses du Sud, où l'on vous accueille en personne.</h1>
+  </div>
+</section>
+
+<form class="search" id="reserver" aria-label="Rechercher des disponibilités" onsubmit="return false">
+  <label class="full">Logement
+    <select>
+      <option>Tous les logements</option>
+      <option>Louis Blanc — 40 m²</option>
+      <option>La Suquetane — 60 m²</option>
+      <option>Boulevard du Midi — 90 m² (festivals)</option>
+      <option>Lorgues — villa 200 m²</option>
+    </select>
+  </label>
+  <label>Arrivée<input type="date"></label>
+  <label>Départ<input type="date"></label>
+  <label class="full">Voyageurs<input type="number" min="1" max="12" value="2"></label>
+  <button type="submit" class="btn btn-cta">Voir les disponibilités</button>
+</form>
+
+<section class="highlights" aria-label="Points forts">
+  <div><p class="main">4,96 ★</p><p class="sub">Superhôte · 67 avis voyageurs</p></div>
+  <div><p class="main">Accueil en personne</p><p class="sub">Johanna ou Clément vous remettent les clés</p></div>
+  <div><p class="main">Tout à pied</p><p class="sub">Palais, plages, port et marché Forville</p></div>
+  <div><p class="main">Paiement sécurisé</p><p class="sub">Réservation confirmée en ligne</p></div>
+</section>
+
+<section class="section" id="logements">
+  <div class="section-head">
+    <h2>Nos quatre adresses</h2>
+    <p class="muted">Trois appartements rénovés au cœur de Cannes, et une villa avec piscine dans le Var.</p>
+  </div>
+  <div class="cards">
+    <a class="card" href="logement.html">
+      <img src="https://a0.muscache.com/im/pictures/hosting/Hosting-1566546635946005863/original/bd263180-3dff-4ab4-9d32-94d0581c9a04.jpeg?im_w=1200" alt="Louis Blanc, balcon vue port" loading="lazy">
+      <div>
+        <p class="lieu">Cannes · Vieux-Port</p>
+        <h3>Du Palais à la plage, tout à pied, vue port</h3>
+        <p class="infos">Louis Blanc · 40 m² · 1 chambre · 2 à 4 voyageurs</p>
+        <p class="prix"><strong>Dès 80 € / nuit</strong> · 4,95 ★ (56)</p>
+      </div>
+    </a>
+    <a class="card" href="logement.html">
+      <img src="https://a0.muscache.com/im/pictures/bf8c56be-5e92-460d-bc2d-e1f9dc14fe92.jpg?im_w=1200" alt="La Suquetane, Le Suquet" loading="lazy">
+      <div>
+        <p class="lieu">Cannes · Le Suquet</p>
+        <h3>En équipe ou en famille, Palais et plage à pied</h3>
+        <p class="infos">La Suquetane · 60 m² · 2 chambres · 5 voyageurs</p>
+        <p class="prix"><strong>Dès 105 € / nuit</strong> · 5,0 ★ (10)</p>
+      </div>
+    </a>
+    <a class="card" href="logement.html">
+      <img src="https://a0.muscache.com/im/pictures/hosting/Hosting-44302455/original/a7c3ed96-ab30-413c-a107-5752de636f37.jpeg?im_w=1200" alt="Boulevard du Midi, face à la mer" loading="lazy">
+      <div>
+        <p class="lieu">Cannes · Face à la mer</p>
+        <h3>Face à la mer, la plage en traversant la rue</h3>
+        <p class="infos">Boulevard du Midi · 90 m² · 2 chambres · 2 salles de bain · 4 voyageurs · parking</p>
+        <p class="prix"><strong>Dès 592 € / nuit</strong> · <span class="badge">Festivals uniquement</span></p>
+      </div>
+    </a>
+    <a class="card" href="logement.html">
+      <img src="https://a0.muscache.com/im/pictures/hosting/Hosting-51767926/original/9fcfefb8-a8d9-42cc-8cd9-faae8e131de7.jpeg?im_w=1200" alt="Villa de Lorgues, piscine et vallée" loading="lazy">
+      <div>
+        <p class="lieu">Provence · Lorgues</p>
+        <h3>Parenthèse en Provence, nature &amp; piscine</h3>
+        <p class="infos">Villa 200 m² · 5 chambres · 3 salles de bain · 12 voyageurs · piscine 10 × 5 m</p>
+        <p class="prix"><strong>Dès 474 € / nuit</strong> · 5,0 ★ (4)</p>
+      </div>
+    </a>
+  </div>
+</section>
+
+<section class="festivals" id="festivals">
+  <div>
+    <p class="eyebrow">Pros &amp; festivaliers</p>
+    <h2>Votre pied-à-terre pendant les festivals et les salons</h2>
+    <p>Le Palais à pied, un appartement au calme pour se reposer entre deux rendez-vous. Les dates partent tôt : réservez dès l'ouverture.</p>
+    <a class="btn btn-white" href="#contact">Demander un devis équipe</a>
+  </div>
+  <ul class="events">
+    <li><strong>MIDEM</strong><span>19–21 janvier 2027</span></li>
+    <li><strong>WAICF · Canneseries</strong><span>10–16 février 2027</span></li>
+    <li><strong>MIPIM</strong><span>15–19 mars 2027</span></li>
+    <li><strong>Festival de Cannes</strong><span>11–22 mai 2027</span></li>
+    <li><strong>Cannes Lions</strong><span>21–25 juin 2027</span></li>
+    <li><strong>Yachting Festival</strong><span>7–12 septembre 2027</span></li>
+    <li><strong>TFWA</strong><span>3–7 octobre 2027</span></li>
+    <li><strong>MIPCOM</strong><span>18–21 octobre 2027</span></li>
+  </ul>
+</section>
+
+<section class="section hosts" id="hotes">
+  <div class="ph"><span>[PHOTO] Johanna &amp; Clément</span></div>
+  <div>
+    <p class="eyebrow" style="color:var(--cta)">Vos hôtes</p>
+    <h2>Ici, vous êtes chez nous.</h2>
+    <p style="font-size:18px;color:#3A3530;max-width:620px">[TEXTE À VALIDER] Nous sommes Johanna et Clément, Cannois. Nous accueillons chaque voyageur nous-mêmes, préparons les appartements avec soin et partageons nos adresses : le marché Forville le matin, la plage du Midi au coucher du soleil.</p>
+    <p class="muted" style="font-size:15px">Superhôte · 4,96 sur 67 avis · réponse en moins d'une heure</p>
+  </div>
+</section>
+
+<section class="section" aria-label="Avis">
+  <div class="section-head"><h2>Ils ont séjourné chez nous</h2></div>
+  <div class="reviews">
+    <figure><blockquote>« [AVIS VOYAGEUR RÉEL À INSÉRER] »</blockquote><figcaption>Prénom · pays · logement</figcaption></figure>
+    <figure><blockquote>« [AVIS VOYAGEUR RÉEL À INSÉRER] »</blockquote><figcaption>Prénom · pays · logement</figcaption></figure>
+    <figure><blockquote>« [AVIS VOYAGEUR RÉEL À INSÉRER] »</blockquote><figcaption>Prénom · pays · logement</figcaption></figure>
+  </div>
+</section>
+</main>
+
+<footer class="site-footer" id="contact">
+  <div><p class="serif" style="font-size:26px">Chez Johanna</p><p class="muted">Locations saisonnières à Cannes et en Provence.</p></div>
+  <div><p class="t">Logements</p><p class="muted">Louis Blanc<br>La Suquetane<br>Boulevard du Midi<br>Lorgues</p></div>
+  <div><p class="t">Infos</p><p class="muted">Conditions de réservation<br>Annulation<br>Mentions légales<br>Confidentialité</p></div>
+  <div><p class="t">Contact</p><p class="muted">[E-MAIL]<br>[TÉLÉPHONE]<br>Instagram</p></div>
+</footer>
+
+<div class="sticky-bar">
+  <p><strong>4 logements</strong><br><span class="muted">Cannes &amp; Provence</span></p>
+  <a class="btn btn-cta" href="#reserver">Réserver vos dates</a>
+</div>
+</body>
+</html>
