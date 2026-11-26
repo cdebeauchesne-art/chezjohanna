@@ -10,7 +10,7 @@
   const iso = d => `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}-${String(d.getDate()).padStart(2, '0')}`;
   const parse = s => { const [y, m, d] = s.split('-').map(Number); return new Date(y, m - 1, d); };
   const addDays = (d, n) => { const x = new Date(d); x.setDate(x.getDate() + n); return x; };
-  const fmt = s => { const d = parse(s); return `${d.getDate()} ${MOIS[d.getMonth()].slice(0, 4)}${MOIS[d.getMonth()].length > 4 ? '.' : ''}`; };
+  const fmt = s => parse(s).toLocaleDateString('fr-FR', { day: 'numeric', month: 'short' });
   const eur = n => n.toLocaleString('fr-FR') + ' €';
 
   const today = new Date(); today.setHours(0, 0, 0, 0);
