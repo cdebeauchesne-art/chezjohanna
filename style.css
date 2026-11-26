@@ -144,7 +144,7 @@ h1,h2,h3,.serif{font-family:Fraunces,Georgia,serif;font-weight:400}
   .lg-body h2{font-size:30px}
   .tiles{grid-template-columns:repeat(4,1fr)}
   .equip{grid-template-columns:repeat(3,1fr)}
-  .services{display:grid;grid-template-columns:repeat(3,1fr);overflow:visible}
+  .services{display:grid;grid-template-columns:repeat(4,1fr);overflow:visible}
   .services .tile{width:auto}
   .booking{position:sticky;top:24px;padding:28px}
   .map{height:360px}
