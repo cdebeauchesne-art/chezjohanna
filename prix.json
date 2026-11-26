@@ -1,0 +1,43 @@
+{
+ "_note": "Prix directs du site, indépendants d'Airbnb. PROVISOIRES : à remplacer par la grille validée par Johanna. Une période avec nuit null = tarif sur demande.",
+ "louis-blanc": {
+  "nom": "Louis Blanc — 40 m²",
+  "nuit": 80,
+  "menage": 100,
+  "minNuits": 2,
+  "voyageursMax": 4,
+  "periodes": [
+   {"nom": "MIPIM", "du": "2027-03-15", "au": "2027-03-20", "nuit": null},
+   {"nom": "Festival de Cannes", "du": "2027-05-10", "au": "2027-05-23", "nuit": null},
+   {"nom": "Cannes Lions", "du": "2027-06-20", "au": "2027-06-26", "nuit": null}
+  ]
+ },
+ "suquetane": {
+  "nom": "La Suquetane — 60 m²",
+  "nuit": 105,
+  "menage": 180,
+  "minNuits": 3,
+  "voyageursMax": 5,
+  "periodes": [
+   {"nom": "MIPIM", "du": "2027-03-15", "au": "2027-03-20", "nuit": null},
+   {"nom": "Festival de Cannes", "du": "2027-05-10", "au": "2027-05-23", "nuit": null},
+   {"nom": "Cannes Lions", "du": "2027-06-20", "au": "2027-06-26", "nuit": null}
+  ]
+ },
+ "bd-du-midi": {
+  "nom": "Boulevard du Midi — 90 m²",
+  "nuit": null,
+  "menage": null,
+  "minNuits": 6,
+  "voyageursMax": 4,
+  "periodes": []
+ },
+ "lorgues": {
+  "nom": "Villa de Lorgues — 200 m²",
+  "nuit": 474,
+  "menage": null,
+  "minNuits": 6,
+  "voyageursMax": 12,
+  "periodes": []
+ }
+}

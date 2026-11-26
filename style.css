@@ -94,7 +94,26 @@ h1,h2,h3,.serif{font-family:Fraunces,Georgia,serif;font-weight:400}
 .dates label:nth-child(2){border-bottom:1px solid #D5CABB}
 .dates label:nth-child(3){grid-column:span 2}
 .dates input{margin-top:2px;border:none;padding:0;font:500 15px Inter,sans-serif;color:var(--ink);width:100%}
-.cal{margin:14px 0;padding:14px;background:var(--bg);border-radius:12px;font-size:13px;color:var(--muted)}
+.cal{margin:0 0 16px}
+.cal-head{display:flex;align-items:center;justify-content:space-between;margin-bottom:8px}
+.cal-head button{width:44px;height:44px;border-radius:999px;border:1px solid #D5CABB;background:#fff;font-size:20px;color:var(--ink);cursor:pointer}
+.cal-head button:disabled{opacity:.35;cursor:default}
+.cal-title{margin:0;font-weight:600;text-transform:capitalize}
+.cal-grid{display:grid;grid-template-columns:repeat(7,1fr);gap:2px;text-align:center}
+.cal-dow{font-size:12px;color:var(--muted);padding:4px 0}
+.cal-day{height:44px;border:none;border-radius:10px;background:none;font:500 15px Inter,sans-serif;color:var(--ink);cursor:pointer}
+.cal-day:hover:not(:disabled){background:#F3EDE4}
+.cal-day:disabled{color:#A39A8E;cursor:default}
+.cal-day.is-busy{background:#EEE7DC;color:#8A8175;text-decoration:line-through}
+.cal-day.is-range{background:#DCE6EE;border-radius:0;text-decoration:none}
+.cal-day.is-sel{background:var(--blue);color:#fff;text-decoration:none}
+.cal-legend{display:flex;align-items:center;gap:6px;font-size:13px;margin:8px 0 0;color:var(--muted)}
+.lg-busy{display:inline-block;width:14px;height:14px;border-radius:4px;background:#EEE7DC}
+.cal-reset{margin-left:auto;background:none;border:none;color:var(--blue);text-decoration:underline;font:500 13px Inter,sans-serif;min-height:44px;cursor:pointer}
+.cal-maj{font-size:12px;margin:0}
+.cal-msg{font-size:14px;margin:12px 0}
+.btn-demande:disabled{opacity:.45;cursor:not-allowed}
+.demande-ok{margin-top:12px;padding:12px;border-radius:12px;background:#F3E2D8;color:#8A3E21;font-size:14px}
 .lines{margin:0 0 16px;display:grid;grid-template-columns:1fr auto;gap:8px;font-size:15px}
 .lines dd{margin:0}.lines .tot{font-weight:600;border-top:1px solid var(--line);padding-top:10px}
 .booking .btn{width:100%;border-radius:14px}

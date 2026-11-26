@@ -94,22 +94,24 @@
     </ul>
   </div>
 
-  <aside class="booking" id="reserver" aria-label="Réserver">
+  <aside class="booking" id="reserver" data-logement="louis-blanc" aria-label="Réserver">
     <p class="price"><strong>80 €</strong> <span class="muted">/ nuit, dès</span></p>
-    <div class="dates">
-      <label>Arrivée<input type="date"></label>
-      <label>Départ<input type="date"></label>
-      <label>Voyageurs<input type="number" min="1" max="4" value="2"></label>
+    <div class="cal" aria-label="Calendrier des disponibilités">
+      <div class="cal-head"><button type="button" class="cal-prev" aria-label="Mois précédent">‹</button><p class="cal-title"></p><button type="button" class="cal-next" aria-label="Mois suivant">›</button></div>
+      <div class="cal-grid"></div>
+      <p class="cal-legend"><span class="lg-busy" aria-hidden="true"></span> Indisponible <button type="button" class="cal-reset">Effacer les dates</button></p>
+      <p class="cal-maj muted"></p>
     </div>
-    <div class="cal">[CALENDRIER DES DISPONIBILITÉS — synchronisé avec Airbnb]</div>
-    <dl class="lines">
-      <dt>3 nuits</dt><dd>[MONTANT] €</dd>
-      <dt>Ménage</dt><dd>100 €</dd>
-      <dt>Taxe de séjour</dt><dd>[MONTANT] €</dd>
-      <dt class="tot">Total</dt><dd class="tot">[TOTAL] €</dd>
-    </dl>
-    <button type="button" class="btn btn-cta">Réserver</button>
-    <p class="muted" style="margin:12px 0 0;text-align:center;font-size:13px">Paiement sécurisé · confirmation immédiate</p>
+    <div class="dates">
+      <label>Arrivée<input class="d-arr" type="text" readonly placeholder="—"></label>
+      <label>Départ<input class="d-dep" type="text" readonly placeholder="—"></label>
+      <label>Voyageurs<input class="d-voy" type="number" min="1" max="4" value="2"></label>
+    </div>
+    <p class="cal-msg muted" aria-live="polite"></p>
+    <dl class="lines"></dl>
+    <button type="button" class="btn btn-cta btn-demande" disabled>Demander à réserver</button>
+    <p class="muted" style="margin:12px 0 0;text-align:center;font-size:13px">Votre carte n'est débitée qu'après notre confirmation, sous 24 h (en général dans l'heure).</p>
+    <div class="demande-ok" hidden><strong>Version de test :</strong> le paiement sécurisé sera activé ici. Aucune demande n'a été envoyée.</div>
     <p style="margin:12px 0 0;text-align:center;font-size:14px"><a href="index.html#contact">Une question ? Écrire à Johanna</a></p>
   </aside>
 </div>
@@ -139,5 +141,6 @@
   <p><strong>Dès 80 € / nuit</strong><br><span class="muted">Ménage 100 €</span></p>
   <a class="btn btn-cta" href="#reserver">Choisir les dates</a>
 </div>
+<script src="booking.js" defer></script>
 </body>
 </html>
