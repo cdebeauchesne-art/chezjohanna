@@ -42,6 +42,9 @@ h1,h2,h3,.serif{font-family:Fraunces,Georgia,serif;font-weight:400}
 .card .infos{margin:0;color:var(--muted);font-size:15px}
 .card .prix{margin:8px 0 0;font-size:15px}
 .badge{display:inline-block;background:#F3E2D8;color:#8A3E21;border-radius:999px;padding:2px 10px;font-size:13px;font-weight:600}
+.perso{margin:48px 16px 0;background:#fff;border-radius:20px;padding:24px;display:flex;flex-direction:column;gap:16px}
+.perso h2{margin:0 0 6px;font-size:26px}
+.perso p{margin:0}
 .festivals{margin:56px 16px 0;background:var(--blue);color:#fff;border-radius:20px;padding:32px 20px;display:grid;gap:28px}
 .festivals h2{margin:0 0 14px;font-size:30px;line-height:1.1}
 .festivals .eyebrow{color:#E9C9B3}
@@ -121,7 +124,9 @@ h1,h2,h3,.serif{font-family:Fraunces,Georgia,serif;font-weight:400}
   .cards{grid-template-columns:repeat(4,1fr);gap:24px}
   .card img{height:360px;border-radius:18px}
   .card h3{font-size:24px}
-  .festivals{margin:112px 64px 0;padding:64px;border-radius:24px;grid-template-columns:1fr 1.2fr;gap:64px}
+  .perso{margin:72px 64px 0;padding:32px 40px;flex-direction:row;align-items:center;justify-content:space-between;gap:32px}
+  .perso h2{font-size:32px}
+  .festivals{margin:72px 64px 0;padding:64px;border-radius:24px;grid-template-columns:1fr 1.2fr;gap:64px}
   .festivals h2{font-size:44px}
   .events{grid-template-columns:1fr 1fr;gap:12px}
   .hosts{grid-template-columns:480px 1fr;gap:72px;align-items:center}
