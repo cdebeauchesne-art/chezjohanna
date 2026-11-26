@@ -3,6 +3,8 @@
 import { writeFileSync, readFileSync, existsSync } from 'node:fs';
 
 const urls = JSON.parse(process.env.ICAL_URLS || '{}');
+if (!Object.keys(urls).length) { console.log('Secret ICAL_URLS absent : rien à faire.'); process.exit(0); }
+const previous = existsSync('dispo.json') ? JSON.parse(readFileSync('dispo.json', 'utf8')) : null;
 const out = { logements: {} };
 
 const toIso = s => `${s.slice(0, 4)}-${s.slice(4, 6)}-${s.slice(6, 8)}`;
@@ -22,12 +24,13 @@ for (const [key, url] of Object.entries(urls)) {
     out.logements[key] = ranges;
   } catch (e) {
     console.error(`Échec pour ${key} : ${e.message}`);
+    // En cas d'échec, on garde les dates connues plutôt que d'afficher le logement libre.
+    if (previous && previous.logements[key]) out.logements[key] = previous.logements[key];
     process.exitCode = 1;
   }
 }
 
 // On ne réécrit le fichier que si les dates ont changé (évite un commit toutes les 15 min).
-const previous = existsSync('dispo.json') ? JSON.parse(readFileSync('dispo.json', 'utf8')) : null;
 if (previous && JSON.stringify(previous.logements) === JSON.stringify(out.logements)) {
   console.log('Aucun changement.');
 } else {
